@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "static-web-example-bucket" {
-  bucket = "static-web-example-bucket"
+  bucket = var.static_web_bucket_name
   acl    = "public-read"
 
   website {

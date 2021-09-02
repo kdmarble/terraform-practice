@@ -25,10 +25,10 @@ variable "repository_name" {
 
 variable "static_web_bucket_name" {
   description = "S3 Bucket to deploy to"
-  default     = "static-web-example-bucket"
+  default     = "keith-marble-static-web-example-bucket"
 }
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "artifacts-bucket"
+  default     = "keith-marble-artifacts-bucket"
 }

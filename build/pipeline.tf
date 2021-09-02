@@ -1,10 +1,10 @@
-data "aws_iam_role" "pipeline_role" {
-  name = "pipeline_role"
+data "aws_iam_role" "pipeline-role" {
+  name = "pipeline-role"
 }
 
 resource "aws_codepipeline" "static_web_pipeline" {
   name     = "static-web-pipeline"
-  role_arn = data.aws_iam_role.pipeline_role.arn
+  role_arn = data.aws_iam_role.pipeline-role.arn
   tags = {
     Environment = var.env
   }
